@@ -8,7 +8,7 @@ MAX_COUNT = 10
 
 
 def find_random_nymber(count_q=MAX_COUNT):
-    number = randint(1, 1001)
+    number = randint(0, 1000)
     print(number, count_q)
     print('Вам нужно угадать число загаданное от 1  до 1000')
     while count_q >= 1:
