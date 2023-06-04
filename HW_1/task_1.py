@@ -9,8 +9,7 @@ def check_quanty_digits(num):
             num = num / 10
             res_len += 1
         return res_len
-    else:
-        return f"вы ввели некоректное число"
+    return f"вы ввели некоректное число"
 
 
 print(check_quanty_digits(123))
