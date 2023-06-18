@@ -6,7 +6,7 @@ example = "C:/teach/алгоритм/home_work_python/home_work_python/HW_leson1
 
 
 def patch_split(input_str):
-    *patch_example, files_name, type_files = example.replace("/", ".").split(".")
+    *patch_example, files_name, type_files = input_str.replace("/", ".").split(".")
     patch_example = "/".join(patch_example)
     return patch_example, files_name, type_files
 
