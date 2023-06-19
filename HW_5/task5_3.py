@@ -5,7 +5,7 @@ def fibonachi(n):
 
     a,b = 0,1
     res = [0]
-    for __ in range(n):
+    for _ in range(n):
         a, b = b, a + b
         res.append(a)
     yield res
