@@ -10,6 +10,7 @@ premia = ["10.25%", "5.35%", "21.06%", "12.05%", "15.51%"]
 
 all_salary = {
     names[i]: float((premia[i])[:-1]) * stavka[i] for i in range(0, len(names))
+    
 }
 
 print(all_salary)
