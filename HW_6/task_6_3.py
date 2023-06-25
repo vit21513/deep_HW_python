@@ -11,12 +11,16 @@ pozition = [[5, 3], [4, 1], [7, 2], [5, 2], [5, 5], [8, 2], [7, 7], [3, 6]]
 def check_queen(queen_poz):
     for i in range(NUMBERS_QUEENS):
         for j in range(i + 1, NUMBERS_QUEENS):
-            if queen_poz[i][0] == queen_poz[j][0] or queen_poz[i][1] == queen_poz[j][1] or \
-                    abs(queen_poz[i][0] - queen_poz[j][0]) == abs(queen_poz[i][1] - queen_poz[j][1]):
+            if (
+                queen_poz[i][0] == queen_poz[j][0]
+                or queen_poz[i][1] == queen_poz[j][1]
+                or abs(queen_poz[i][0] - queen_poz[j][0])
+                == abs(queen_poz[i][1] - queen_poz[j][1])
+            ):
                 return False
     print(queen_poz)
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(check_queen(pozition))
