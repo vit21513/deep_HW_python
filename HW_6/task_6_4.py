@@ -7,7 +7,7 @@ from random import randint
 
 
 def random_poz_queen():
-    res = [[randint(1, 9) for i in range(2)] for i in range(queen.NUMBERS_QUEENS)]
+    res = [[randint(1, 9) for i in range(2)] for j in range(queen.NUMBERS_QUEENS)]
     for i in range(len(res)):
         if res.count(res[i]) >= 2:
             for j in range(res.count(res[i])):
