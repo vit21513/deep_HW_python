@@ -64,5 +64,5 @@ def check(a, b, c):
             return x_1
 
 
-# gen_csv()
+gen_csv()
 check(5, 0, -5)
